@@ -42,9 +42,9 @@ public class CursosController {
 	 JdbcCursosDao dao = (JdbcCursosDao)ctx.getBean("jdbcCursosDAO");
 	 dao.incluirCurso(curso);
 
-	 model.addAttribute("msg", "Escola " + curso.getDescricao() + "incluída");
+	 model.addAttribute("msg", "Escola " + curso.getDescricao() + "incluÃ­da");
 
-	 return "cadastros/incluirCurso";
+	 return "menu";
 	 } catch (Exception e) {
 	 model.addAttribute("erro", e.getMessage());
 	 return "erro";
